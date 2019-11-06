@@ -17,7 +17,7 @@ toc: false
 
 # Objectif du modèle
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus, mauris non rhoncus vestibulum, est massa hendrerit mauris, id rhoncus erat turpis dignissim ipsum. Aliquam eget fermentum magna. Sed lobortis finibus nibh sit amet cursus. Vestibulum eu leo in enim bibendum sodales id a est. Nam commodo, augue a posuere ultricies, neque tellus euismod sapien, ac aliquet diam elit a purus. Nullam arcu mauris, hendrerit ac neque lacinia, rhoncus congue ex. Suspendisse tempor mattis ante, quis ultrices velit luctus at. Nulla ultrices ultrices dui, vitae interdum augue venenatis ut. Aliquam scelerisque pharetra nunc eget suscipit. Aliquam convallis molestie lectus a tincidunt.
+L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique *Aedes albopictus*. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 milions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dingue qui est *Aedes aegypti*. Si les auteurs préfères s’intéresser à *Aedes albopictus*, c’est parce que cette espèce a été la cause de plusieurs épidémie de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitivz qu’*A. aegypti*.
 
 # Reproductibilité de l'article
 
