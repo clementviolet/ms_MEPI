@@ -19,6 +19,15 @@ toc: false
 
 L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique *Aedes albopictus*. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 milions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dingue qui est *Aedes aegypti*. Si les auteurs préfères s’intéresser à *Aedes albopictus*, c’est parce que cette espèce a été la cause de plusieurs épidémie de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitivz qu’*A. aegypti*.
 
+Les auteurs ont créé un premier modèle en couplant un modèle classique SEIR pour modéliser la dynamique de l'infection chez l'Homme avec un modèle SEI pour modéliser la dynamique de la maladie chez le vecteur. 
+
+Le modèle de dynamique chez l'Homme est le suivant :
+
+$$ \frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{cV_i}{H_t} + \mu_h\right)$$ {#eq:eq1}
+$$ \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$ {#eq:eq2}
+$$ \frac{dH_i}{dt} = H_e\tau_{exh} - H_i\left(\tau_{ih} + \alpha + \mu_h\right)$$ {#eq:eq3}
+$$ \frac{dH_r}{dt} = H_i\left(\tau_{ih}\right) - \mu_h H_r$$ {#eq:eq4}
+
 # Reproductibilité de l'article
 
 Ut a risus placerat, tempor magna in, efficitur leo. Nunc et tristique diam, vitae commodo nisi. In eu lorem et odio vehicula sagittis malesuada eu dolor. Aenean venenatis dui eget justo suscipit, eu mattis neque rutrum. In finibus suscipit eros, ac bibendum massa iaculis et. Duis sit amet hendrerit lorem, sit amet hendrerit eros. Proin cursus cursus ipsum, et feugiat augue suscipit vitae. Phasellus vitae neque nec lectus viverra pulvinar. Sed eget orci non nunc tempor rutrum ut sagittis nunc. Quisque auctor metus nec leo fermentum, non tincidunt nisl imperdiet.
