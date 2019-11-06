@@ -28,7 +28,7 @@ Je cite cette equation {@eq:eq1} !
 
 $$
 y  = 4\\
-x  = 9\\
+x  = 9
 $$
 # Reproductibilité de l'article
 
