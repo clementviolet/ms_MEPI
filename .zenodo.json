@@ -1,0 +1,23 @@
+{
+  "title": "Rapport Modélisation en Epidémiologie",
+  "upload_type": "preprint",
+  "access_right": "open",
+  "license": "CC-BY",
+  "language": "fr",
+  "creators": [
+    {
+      "affiliation": "Université de Rennes 1",
+      "familyname": "Reynald",
+      "givennames": "Kevyn",
+      "orcid": "0000-0000-0000-0000"
+    },
+    {
+      "affiliation": "Université de Rennes 1",
+      "familyname": "Violet",
+      "givennames": "Clément",
+      "orcid": "0000-0001-6217-5891"
+    }
+  ],
+  "description": "Rapport de l'UE MEPI, d'apèrs l'article intitulé\"A dengue model with a dynamic Aedes albopictus vector population\" d'après Erickson et al. 2010",
+  "keywords": ["MEPI", "Rennes 1", "Projet"]
+}
