@@ -28,7 +28,7 @@ $$\frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{c*V_i}{H_t} + \mu_h\right)
 
 Je cite cette equation {@eq:eq1} !
 
-$$J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \text{log}(p)\right)$$ {#eq:eq1}
+$$ \frac{J}{p} = \frac{1}{\text{log}(S)}\times\left(-\sum p \text{log}(p)\right)$$ {#eq:eq1}
 
 # Reproductibilité de l'article
 
