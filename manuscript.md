@@ -26,6 +26,10 @@ $$\frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{c*V_i}{H_t} + \mu_h\right)
 
   \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$
 
+Je cite cette equation {@eq:eq1} !
+
+$$J'(p) = \frac{1}{\text{log}(S)}\times\left(-\sum p \text{log}(p)\right)$$ {#eq:eq1}
+
 # Reproductibilité de l'article
 
 Ut a risus placerat, tempor magna in, efficitur leo. Nunc et tristique diam, vitae commodo nisi. In eu lorem et odio vehicula sagittis malesuada eu dolor. Aenean venenatis dui eget justo suscipit, eu mattis neque rutrum. In finibus suscipit eros, ac bibendum massa iaculis et. Duis sit amet hendrerit lorem, sit amet hendrerit eros. Proin cursus cursus ipsum, et feugiat augue suscipit vitae. Phasellus vitae neque nec lectus viverra pulvinar. Sed eget orci non nunc tempor rutrum ut sagittis nunc. Quisque auctor metus nec leo fermentum, non tincidunt nisl imperdiet.
