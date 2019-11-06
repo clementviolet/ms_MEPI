@@ -22,8 +22,9 @@ L'objectif de ce modèle est d'observer la dynamique de la transmission de la de
 
 Les auteurs ont créé un premier modèle en couplant un modèle classique SEIR pour modéliser la dynamique de l'infection chez l'Homme avec un modèle SEI pour modéliser la dynamique de la maladie chez le vecteur. 
 
-$$ \frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{c*V_i}{H_t} + \mu_h\right) \\
-  \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$
+$$ \frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{c*V_i}{H_t} + \mu_h\right)
+
+   \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$
 
 Je cite cette equation {@eq:eq1} !
 
