@@ -67,7 +67,19 @@ L'hypothèse la plus contraignante pour le modèle est la dernière. Il existe e
 
 # Reproductibilité de l'article
 
-Ut a risus placerat, tempor magna in, efficitur leo. Nunc et tristique diam, vitae commodo nisi. In eu lorem et odio vehicula sagittis malesuada eu dolor. Aenean venenatis dui eget justo suscipit, eu mattis neque rutrum. In finibus suscipit eros, ac bibendum massa iaculis et. Duis sit amet hendrerit lorem, sit amet hendrerit eros. Proin cursus cursus ipsum, et feugiat augue suscipit vitae. Phasellus vitae neque nec lectus viverra pulvinar. Sed eget orci non nunc tempor rutrum ut sagittis nunc. Quisque auctor metus nec leo fermentum, non tincidunt nisl imperdiet.
+Pour ce projet, nous avons essayé de reproduire les principaux résultats de cet article à savoir les principaux graphiques de ce modèle. Le premier modèle a été relativement simple à coder  en R, puisque le nombre d'équation est relativement restraint.
+
+C'est en essayant de coder par nous-même ce modèle que nous avons rencontrer les points négatifs de cet article : la reproductibilité. Bien que les équations soient relativement simple dans le premier modèle, il existe déjà des erreurs de mise en page concernant les équations. Ces erreurs ont été facilement contourné grâce aux autres modèles de l'article qui ne sont qu'une extension du premier. Néanmoins, corriger ces premières erreurs n'a pas été suffisant pour faire fonctionner ce premier modèle : il y avait d'autres erreurs plus incidieuses.
+
+Le tableau décrivant les valeurs des différents paramètres contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle.
+
+Ajouter figure du modèle
+
+Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelés dans les équations pas moins de X fautes. Nous avons essayer de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs. Ajouter figure de ce qu'on trouve et devrait trouver.
+
+Il est possible que nos corrections soient également érronées, ou bien alors qu'il y ait d'autres erreurs dans les paramètres du modèles. Certains paramètres sont des fonctions dépendants de la température, or l'article ne contient pas ces fonctions mathématiques. L'article contient uniquement leurs images pour une température de 25°C. Nous supposons qu'il y a également des erreurs de typographie pour les images de ces fonctions. Pour les paramètres consernés, nous avons essayé de nombreuses autres valeurs, mais aucune ne convenait. Les auteurs indique seulement que nous pouvont trouver ces equations dans le mémoire de master de l'auteur principal. Cependant, aucune version de ce mémoire n'est disponible en ligne.
+
+Pour le dernier modèle, même s'il nous avait été possible de faire fonctionner le deuxième modèle, nous n'aurrions pas pu le reproduire. En effet, les auteurs de cet article expliquent avoir fait varier la température grâce à la températures de l'air moyenne de la ville de Lubbock au Texas. Bien que ces données soient disponible sur internet, le fait de ne pas avoir accès aux fonctions mathématiques dont les images servent de paramètres aux modèles 2 et 3 nous empêche de les reproduire.
 
 # Modélisation complémentaire
 
