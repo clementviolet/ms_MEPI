@@ -4,7 +4,9 @@ authors:
 - Clément Violet
 documentclass: article
 classoption: oneside
-mainlang: french
+langue: true
+polyglossia-lang:
+  name: french
 geometry:
   - left = 2cm
   - right = 2cm
@@ -13,6 +15,7 @@ geometry:
 mainfont: Lato
 fontsize: 12pt
 toc: false
+linestretch: false
 ---
 
 # Objectif du modèle
