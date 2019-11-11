@@ -32,13 +32,13 @@ $$ \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$ {#eq:eq2}
 $$ \frac{dH_i}{dt} = H_e\tau_{exh} - H_i\left(\tau_{ih} + \alpha + \mu_h\right)$$ {#eq:eq3}
 $$ \frac{dH_r}{dt} = H_i\left(\tau_{ih}\right) - \mu_h H_r$$ {#eq:eq4}
 
-Avec les équations {#eq:eq1}, {#eq:eq2}, {#eq:eq3}, {#eq:eq4} faisant référence respectivement au nombre de personnes sensisbles, exposées, infectées, "recovered" (trouver traduction) Le modèle de dynamique épidémiologique pour le moustique est celui-ci :
+Avec les équations {@eq:eq1}, {@eq:eq2}, {@eq:eq3}, {@eq:eq4} faisant référence respectivement au nombre de personnes sensisbles, exposées, infectées, "recovered" (trouver traduction) Le modèle de dynamique épidémiologique pour le moustique est celui-ci :
 
 $$ \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)$$ {#eq:eq5}
 $$ \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)$$ {#eq:eq6}
 $$ \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i $$ {#eq:eq7}
 
-Les équations {#eq:eq5}, {#eq:eq6}, {#eq:eq7} font quant à elle références respectivement aux moustiques sensibles, exposés et infectés.
+Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elle références respectivement aux moustiques sensibles, exposés et infectés.
 
 Les paramètres de ce modèle sont présentés dans la figure X adapté de Y.
 
