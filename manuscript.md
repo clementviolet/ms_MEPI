@@ -61,7 +61,7 @@ Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté 
 | Taux de mortalité des larves                                  |  $\mu_l$        |  $0.025$               |
 | Inverse du temps de développement des nymphes                 |  $\tau_p$       |  $0,342$               |
 | Taux de mortalité des nymphes                                 |  $\mu_p$        |  $ 0,0025$             |
-| Inverse du temps de développement des adultes immatures       |  $\tau_i$      |  $1$                   |
+| Inverse du temps de développement des adultes immaturees      |  $\tau_i$       |  $1$                   |
 | Taux de mortalité des adultes                                 |  $\mu_a$        |  $0,0501$              |
 | Inverse du temps d'exposition du vecteur                      |  $\tau_{ex\nu}$ |  $1/9$ jours           |
 | Temps de nourissage ou de gestation                           |  $\tau_g$       |  $0.401$               |
