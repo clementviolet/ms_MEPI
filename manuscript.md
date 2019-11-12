@@ -40,7 +40,7 @@ $$ \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i $$ {#eq:eq7}
 
 Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elle références respectivement aux moustiques sensibles, exposés et infectés.
 
-Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté de Y.
+Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté de @Erickson_2010.
 
 |                             Nom de la variable                | Variable        | Valeur                 |
 | :------------------------------------------------------------ | :-------------: | :--------------------: |
@@ -61,6 +61,7 @@ Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté 
 | Taux de mortalité des larves                                  |  $\mu_l$        |  $0.025$               |
 | Inverse du temps de développement des nymphes                 |  $\tau_p$       |  $0,342$               |
 | Taux de mortalité des nymphes                                 |  $\mu_p$        |  $0,0025$              |
+| Inverse du temps de développement des adultes immaturees      |  $\tau_i$       |  $1$                   |
 | Inverse du temps de développement des adultes immaturees      |  $\tau_i$       |  $1$                   |
 | Taux de mortalité des adultes                                 |  $\mu_a$        |  $0,0501$              |
 | Inverse du temps d'exposition du vecteur                      |  $\tau_{ex\nu}$ |  $1/9$ jours           |
