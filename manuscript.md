@@ -53,7 +53,7 @@ Ce premier modèle relativement simple a été ensuite largement modifié par le
 
 Seul les deux derniers stades de ce cycle de vie peuvent donner lieu à l'infection d'un être humain sensible. En effet, les femelles ayant atteint ces stades de vies doivent consommer du sang pour pouvoir assurer la survie de leurs oeufs. Ce second modèle a été évalué par les auteurs à une température constante de 25°C.
 
-Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour influencer certaines variables controllant le modèle 2. Les variables forcés par la température sont :
+Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour forcer certaines variables controllant le modèle 2. Les variables influencées par la température sont :
 
 - Le temps de développement des oeufs ;
 - Le temps de développement des larves ;
