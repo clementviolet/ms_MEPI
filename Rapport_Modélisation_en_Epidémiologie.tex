@@ -44,6 +44,15 @@
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 \usepackage[left = 2cm,right = 2cm,top = 2cm,bottom = 2cm]{geometry}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -93,7 +102,55 @@ sensisbles, exposées, infectées, immunisées. Le modèle de dynamique
 Les équations \ref{eq:eq5}, \ref{eq:eq6}, \ref{eq:eq7} font quant à elle
 références respectivement aux moustiques sensibles, exposés et infectés.
 
-Les paramètres de ce modèle sont présentés dans la figure X adapté de Y.
+Les paramètres de ce modèle sont présentés dans le tableau \ref{tbl:1}
+adapté de (Erickson et al. 2010).
+
+\begin{longtable}[]{@{}ccc@{}}
+\caption{Tabeau de paramètres utilisés pour construitre le modèle 1.
+\label{tbl:1}}\tabularnewline
+\toprule
+Nom de la variable & Variable & Valeur\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+Nom de la variable & Variable & Valeur\tabularnewline
+\midrule
+\endhead
+Taux de croissance de la population humaine & \(\lambda\) &
+\(5,8\times 10^{-5}\)\tabularnewline
+Taux de mortalité humaine & \(\mu_h\) & \(1/28000\) jours\tabularnewline
+Pourcentage journalier de vecteur nécessitant un second repas & \(s_f\)
+& \(0.03\)\tabularnewline
+Probabilité de mordre un humain & \(b_h\) & \(0,3\)\tabularnewline
+Probabilité de transmettre la dengue & \(t_p\) & \(0,4\)\tabularnewline
+Probabilité de contact & \(c\) & \(b_h \times t_p\)~\tabularnewline
+Inverse du temps d'exposition de l'hôte & \(\tau_{exh}\) & \(1/10\)
+jours\tabularnewline
+Taux de mortalité des hôtes de la dengue & ~ \(\alpha\) &
+\(0,003\)\tabularnewline
+Inverse du temps d'infection de l'hôte & \(\tau_{ih}\) & ~ \(1/4\)
+jours\tabularnewline
+Oeufs par ponte & \(e_p\) & \(30\)\tabularnewline
+Inverse du temps de développement des oeufs & \(\tau_e\) &
+\(0,361\)\tabularnewline
+Taux de mortalité des oeufs & ~\(\mu_e\) & ~\(0,05\)\tabularnewline
+Terme de capacité de charge & ~ \(K\) & \(10^{-3}\)\tabularnewline
+Inverse du temps de développement des larves & ~ \(\tau_l\) &
+\(0,134\)\tabularnewline
+Taux de mortalité des larves & \(\mu_l\) & \(0.025\)\tabularnewline
+Inverse du temps de développement des nymphes & ~ \(\tau_p\) &
+\(0,342\)\tabularnewline
+Taux de mortalité des nymphes & \(\mu_p\)~ & \$ 0,0025\$\tabularnewline
+Inverse du temps de développement des adultes immatures & ~ \(\tau_i\)
+& \(1\)\tabularnewline
+Taux de mortalité des adultes & ~ \(\mu_a\) & \(0,0501\)\tabularnewline
+Inverse du temps d'exposition du vecteur & \(\tau_{ex\nu}\) & \(1/9\)
+jours\tabularnewline
+Temps de nourissage ou de gestation & ~ \(\tau_g\) &
+\(0.401\)\tabularnewline
+Inverse du temps de reproduction & \(\tau_r\) & \(1\)\tabularnewline
+\bottomrule
+\end{longtable}
 
 Ce premier modèle relativement simple a été ensuite largement modifié
 par les auteurs. Ces derniers ont créé un second modèle en divisant le
@@ -261,6 +318,13 @@ ante eu, scelerisque tincidunt ipsum. Pellentesque hendrerit vestibulum
 mollis. Aliquam et neque hendrerit risus sagittis placerat.
 
 \hypertarget{references}{%
-\section{References}\label{references}}
+\section*{References}\label{references}}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-Erickson_2010}{}%
+\textbf{Erickson et al.} (2010). A dengue model with a dynamic aedes
+albopictus vector population. \emph{Ecological Modelling.} Elsevier BV;
+221:2899--908.
 
 \end{document}

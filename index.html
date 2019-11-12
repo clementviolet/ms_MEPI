@@ -56,7 +56,131 @@
          <p>Avec les équations <a href="#eq:eq1">1</a>, <a href="#eq:eq2">2</a>, <a href="#eq:eq3">3</a>, <a href="#eq:eq4">4</a> faisant référence respectivement au nombre de personnes sensisbles, exposées, infectées, immunisées. Le modèle de dynamique épidémiologique pour le moustique est celui-ci :</p>
          <p><span id="eq:eq5" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_s%7D%7Bdt%7D%20%3D%20%5Cmu_aV_t%20-%20V_s%20%5Cleft%28%5Cfrac%7BcH_i%7D%7BH_t%7D%20%2B%20mu_a%5Cright%29" alt=" \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)" title=" \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)" /><br /><span class="eqnos-number">(5)</span></span>  <span id="eq:eq6" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_e%7D%7Bdt%7D%20%3D%20V_s%20%5Cfrac%7BcH_i%7D%7BH_t%7D%20-%20V_e%20%5Cleft%28%5Ctau_%7Bex%5Cnu%7D%20%2B%20%5Cmu_a%5Cright%29" alt=" \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)" title=" \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)" /><br /><span class="eqnos-number">(6)</span></span>  <span id="eq:eq7" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_i%7D%7Bdt%7D%20%3D%20V_e%5Ctau_%7Bex%5Cnu%7D%20-%20%5Cmu_aV_i%20" alt=" \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i " title=" \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i " /><br /><span class="eqnos-number">(7)</span></span> </p>
          <p>Les équations <a href="#eq:eq5">5</a>, <a href="#eq:eq6">6</a>, <a href="#eq:eq7">7</a> font quant à elle références respectivement aux moustiques sensibles, exposés et infectés.</p>
-         <p>Les paramètres de ce modèle sont présentés dans la figure X adapté de Y.</p>
+         <p>Les paramètres de ce modèle sont présentés dans le tableau <a href="#tbl:1">1</a> adapté de <span class="citation" data-cites="Erickson_2010">(Erickson et al. 2010)</span>.</p>
+         <div id="tbl:1" class="tablenos">
+         <table>
+         <caption><span>Table 1:</span> Tabeau de paramètres utilisés pour construitre le modèle 1. </caption>
+         <thead>
+         <tr class="header">
+         <th style="text-align: center;">Nom de la variable</th>
+         <th style="text-align: center;">Variable</th>
+         <th style="text-align: center;">Valeur</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr class="odd">
+         <td style="text-align: center;">Taux de croissance de la population humaine</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Clambda" alt="\lambda" title="\lambda" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?5%2C8%5Ctimes%2010%5E%7B-5%7D" alt="5,8\times 10^{-5}" title="5,8\times 10^{-5}" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Taux de mortalité humaine</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_h" alt="\mu_h" title="\mu_h" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1%2F28000" alt="1/28000" title="1/28000" /> jours</td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Pourcentage journalier de vecteur nécessitant un second repas</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?s_f" alt="s_f" title="s_f" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0.03" alt="0.03" title="0.03" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Probabilité de mordre un humain</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?b_h" alt="b_h" title="b_h" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C3" alt="0,3" title="0,3" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Probabilité de transmettre la dengue</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?t_p" alt="t_p" title="t_p" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C4" alt="0,4" title="0,4" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Probabilité de contact</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?c" alt="c" title="c" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?b_h%20%5Ctimes%20t_p" alt="b_h \times t_p" title="b_h \times t_p" /> </td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Inverse du temps d’exposition de l’hôte</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_%7Bexh%7D" alt="\tau_{exh}" title="\tau_{exh}" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1%2F10" alt="1/10" title="1/10" /> jours</td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Taux de mortalité des hôtes de la dengue</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Calpha" alt="\alpha" title="\alpha" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C003" alt="0,003" title="0,003" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Inverse du temps d’infection de l’hôte</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_%7Bih%7D" alt="\tau_{ih}" title="\tau_{ih}" /></td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1%2F4" alt="1/4" title="1/4" /> jours</td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Oeufs par ponte</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?e_p" alt="e_p" title="e_p" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?30" alt="30" title="30" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Inverse du temps de développement des oeufs</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_e" alt="\tau_e" title="\tau_e" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C361" alt="0,361" title="0,361" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Taux de mortalité des oeufs</td>
+         <td style="text-align: center;"> <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_e" alt="\mu_e" title="\mu_e" /></td>
+         <td style="text-align: center;"> <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C05" alt="0,05" title="0,05" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Terme de capacité de charge</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?K" alt="K" title="K" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?10%5E%7B-3%7D" alt="10^{-3}" title="10^{-3}" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Inverse du temps de développement des larves</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_l" alt="\tau_l" title="\tau_l" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C134" alt="0,134" title="0,134" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Taux de mortalité des larves</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_l" alt="\mu_l" title="\mu_l" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0.025" alt="0.025" title="0.025" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Inverse du temps de développement des nymphes</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_p" alt="\tau_p" title="\tau_p" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C342" alt="0,342" title="0,342" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Taux de mortalité des nymphes</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_p" alt="\mu_p" title="\mu_p" /> </td>
+         <td style="text-align: center;">$ 0,0025$</td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Inverse du temps de développement des adultes immatures</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%04%5Ctau_i" alt="\tau_i" title="\tau_i" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1" alt="1" title="1" /></td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Taux de mortalité des adultes</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_a" alt="\mu_a" title="\mu_a" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C0501" alt="0,0501" title="0,0501" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Inverse du temps d’exposition du vecteur</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_%7Bex%5Cnu%7D" alt="\tau_{ex\nu}" title="\tau_{ex\nu}" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1%2F9" alt="1/9" title="1/9" /> jours</td>
+         </tr>
+         <tr class="odd">
+         <td style="text-align: center;">Temps de nourissage ou de gestation</td>
+         <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_g" alt="\tau_g" title="\tau_g" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0.401" alt="0.401" title="0.401" /></td>
+         </tr>
+         <tr class="even">
+         <td style="text-align: center;">Inverse du temps de reproduction</td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_r" alt="\tau_r" title="\tau_r" /></td>
+         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1" alt="1" title="1" /></td>
+         </tr>
+         </tbody>
+         </table>
+         </div>
          <p>Ce premier modèle relativement simple a été ensuite largement modifié par les auteurs. Ces derniers ont créé un second modèle en divisant le cycle de vie du moustique <em>A. aegypti</em> en six stades de vie distincts :</p>
          <ol type="1">
          <li>Oeufs ;</li>
@@ -96,7 +220,12 @@
          <p>Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi varius mauris eu ipsum pellentesque accumsan a vitae turpis. Sed laoreet finibus purus, venenatis facilisis mi. Curabitur molestie dui nibh, non condimentum metus efficitur nec. Fusce nisl eros, bibendum et fermentum vel, commodo eu est. Sed tristique eleifend felis, sed porttitor tellus luctus non. Mauris eros metus, rhoncus viverra imperdiet eget, tempor in odio. Aliquam dapibus pharetra tortor sit amet fermentum.</p>
          <h1 id="synthèse">Synthèse</h1>
          <p>Proin eleifend eros eget ante porta, at hendrerit urna pharetra. Duis a lacus condimentum, dignissim lacus et, tincidunt enim. Quisque ac efficitur velit. Sed semper ligula id lacus venenatis hendrerit. Phasellus a nisl id sapien porttitor cursus sed sit amet orci. Praesent blandit feugiat neque ac feugiat. Quisque dictum enim sed velit sodales pellentesque. In sapien ligula, bibendum ac purus vitae, luctus venenatis nisl. Nulla nec posuere velit. Suspendisse ex ex, laoreet ac ante eu, scelerisque tincidunt ipsum. Pellentesque hendrerit vestibulum mollis. Aliquam et neque hendrerit risus sagittis placerat.</p>
-         <h1 id="references">References</h1>
+         <h1 id="references" class="unnumbered">References</h1>
+         <div id="refs" class="references" role="doc-bibliography">
+         <div id="ref-Erickson_2010">
+         <p><strong>Erickson et al.</strong> (2010). A dengue model with a dynamic aedes albopictus vector population. <em>Ecological Modelling.</em> Elsevier BV; 221:2899–908. </p>
+         </div>
+         </div>
       </article>
 
    </body>

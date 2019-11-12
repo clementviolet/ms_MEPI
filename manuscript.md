@@ -40,7 +40,34 @@ $$ \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i $$ {#eq:eq7}
 
 Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elle références respectivement aux moustiques sensibles, exposés et infectés.
 
-Les paramètres de ce modèle sont présentés dans la figure X adapté de Y.
+Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté de [@Erickson_2010].
+
+|                             Nom de la variable                | Variable        | Valeur                 |
+| :-----------------------------------------------------------: | :-------------: | :--------------------: |
+| Taux de croissance de la population humaine                   |  $\lambda$      |  $5,8\times 10^{-5}$   |
+| Taux de mortalité humaine                                     |  $\mu_h$        |  $1/28000$ jours       |
+| Pourcentage journalier de vecteur nécessitant un second repas |  $s_f$          |  $0.03$                |
+| Probabilité de mordre un humain                               |  $b_h$          |  $0,3$                 |
+| Probabilité de transmettre la dengue                          |  $t_p$          |  $0,4$                 |
+| Probabilité de contact                                        |  $c$            |  $b_h \times t_p$      |
+| Inverse du temps d'exposition de l'hôte                       |  $\tau_{exh}$   |  $1/10$ jours          |
+| Taux de mortalité des hôtes de la dengue                      |  $\alpha$       |  $0,003$               |
+| Inverse du temps d'infection de l'hôte                        |  $\tau_{ih}$    |  $1/4$ jours           |
+| Oeufs par ponte                                               |  $e_p$          |  $30$                  |
+| Inverse du temps de développement des oeufs                   |  $\tau_e$       |  $0,361$               |
+| Taux de mortalité des oeufs                                   |  $\mu_e$        |  $0,05$                |
+| Terme de capacité de charge                                   |  $K$            |  $10^{-3}$             |
+| Inverse du temps de développement des larves                  |  $\tau_l$       |  $0,134$               |
+| Taux de mortalité des larves                                  |  $\mu_l$        |  $0.025$               |
+| Inverse du temps de développement des nymphes                 |  $\tau_p$       |  $0,342$               |
+| Taux de mortalité des nymphes                                 |  $\mu_p$        |  $ 0,0025$             |
+| Inverse du temps de développement des adultes immatures       |  $\tau_i$      |  $1$                   |
+| Taux de mortalité des adultes                                 |  $\mu_a$        |  $0,0501$              |
+| Inverse du temps d'exposition du vecteur                      |  $\tau_{ex\nu}$ |  $1/9$ jours           |
+| Temps de nourissage ou de gestation                           |  $\tau_g$       |  $0.401$               |
+| Inverse du temps de reproduction                              |  $\tau_r$       |  $1$                   | 
+
+Table: Tabeau de paramètres utilisés pour construitre le modèle 1. {#tbl:1}
 
 Ce premier modèle relativement simple a été ensuite largement modifié par les auteurs. Ces derniers ont créé un second modèle en divisant le cycle de vie du moustique *A. aegypti* en six stades de vie distincts : 
 

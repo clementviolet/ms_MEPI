@@ -1,25 +1,44 @@
 [
     {
-        "DOI": "10.1086/285382",
+        "DOI": "10.1016/j.ecolmodel.2010.08.036",
+        "URL": "https://doi.org/10.1016%2Fj.ecolmodel.2010.08.036",
         "author": [
             {
-                "family": "Martinez",
-                "given": "Neo D."
+                "family": "Erickson",
+                "given": "Richard A."
+            },
+            {
+                "family": "Presley",
+                "given": "Steven M."
+            },
+            {
+                "family": "Allen",
+                "given": "Linda J. S."
+            },
+            {
+                "family": "Long",
+                "given": "Kevin R."
+            },
+            {
+                "family": "Cox",
+                "given": "Stephen B."
             }
         ],
-        "container-title": "The American Naturalist",
-        "id": "Martinez2002",
-        "issue": "6",
+        "container-title": "Ecological Modelling",
+        "id": "Erickson_2010",
+        "issue": "24",
         "issued": {
             "date-parts": [
                 [
-                    2002
+                    2010,
+                    12
                 ]
             ]
         },
-        "page": "1208-1218",
-        "title": "<span class=\"nocase\">Constant Connectance in Community Food Webs</span>",
+        "page": "2899-2908",
+        "publisher": "Elsevier BV",
+        "title": "A dengue model with a dynamic aedes albopictus vector population",
         "type": "article-journal",
-        "volume": "139"
+        "volume": "221"
     }
 ]
