@@ -4,6 +4,7 @@
 %
 \documentclass[
   12pt,
+  french,
   oneside]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -39,6 +40,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={Rapport Modélisation en Epidémiologie},
+  pdflang={fr-fr},
   pdfkeywords={MEPI, Rennes 1, Projet},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
@@ -57,6 +59,13 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifxetex
+  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{french}
+\else
+  \usepackage[shorthands=off,main=french]{babel}
+\fi
 
 \title{Rapport Modélisation en Epidémiologie}
 \date{}
@@ -325,8 +334,8 @@ mollis. Aliquam et neque hendrerit risus sagittis placerat.
 
 \hypertarget{refs}{}
 \leavevmode\hypertarget{ref-Erickson_2010}{}%
-\textbf{Erickson et al.} (2010). A dengue model with a dynamic aedes
-albopictus vector population. \emph{Ecological Modelling.} Elsevier BV;
-221:2899--908.
+\textbf{Erickson et al.} A dengue model with a dynamic aedes albopictus
+vector population. \emph{Ecological Modelling.} Elsevier BV;
+221:2899‑908.
 
 \end{document}

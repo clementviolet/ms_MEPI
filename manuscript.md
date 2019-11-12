@@ -6,8 +6,7 @@ documentclass: article
 classoption: oneside
 dates: Semestre 9 --- Master MODE
 langue: true
-polyglossia-lang:
-  name: french
+lang: fr-fr
 geometry:
   - left = 2cm
   - right = 2cm
