@@ -68,7 +68,7 @@ Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté 
 | Temps de nourissage ou de gestation                           |  $\tau_g$       |  $0.401$               |
 | Inverse du temps de reproduction                              |  $\tau_r$       |  $1$                   | 
 
-Table: Tabeau de paramètres utilisés pour construitre le modèle 1. {#tbl:1}
+Table: Paramètres utilisés pour construitre le modèle 1. {#tbl:1}
 
 Ce premier modèle relativement simple a été ensuite largement modifié par les auteurs. Ces derniers ont créé un second modèle en divisant le cycle de vie du moustique *A. aegypti* en six stades de vie distincts : 
 
@@ -125,4 +125,4 @@ Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et ma
 
 Proin eleifend eros eget ante porta, at hendrerit urna pharetra. Duis a lacus condimentum, dignissim lacus et, tincidunt enim. Quisque ac efficitur velit. Sed semper ligula id lacus venenatis hendrerit. Phasellus a nisl id sapien porttitor cursus sed sit amet orci. Praesent blandit feugiat neque ac feugiat. Quisque dictum enim sed velit sodales pellentesque. In sapien ligula, bibendum ac purus vitae, luctus venenatis nisl. Nulla nec posuere velit. Suspendisse ex ex, laoreet ac ante eu, scelerisque tincidunt ipsum. Pellentesque hendrerit vestibulum mollis. Aliquam et neque hendrerit risus sagittis placerat.
 
-# References
+# Bibliographie
