@@ -32,7 +32,7 @@ $$ \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)$$ {#eq:eq2}
 $$ \frac{dH_i}{dt} = H_e\tau_{exh} - H_i\left(\tau_{ih} + \alpha + \mu_h\right)$$ {#eq:eq3}
 $$ \frac{dH_r}{dt} = H_i\left(\tau_{ih}\right) - \mu_h H_r$$ {#eq:eq4}
 
-Avec les équations {@eq:eq1}, {@eq:eq2}, {@eq:eq3}, {@eq:eq4} faisant référence respectivement au nombre de personnes sensisbles, exposées, infectées, "recovered" (trouver traduction) Le modèle de dynamique épidémiologique pour le moustique est celui-ci :
+Avec les équations {@eq:eq1}, {@eq:eq2}, {@eq:eq3}, {@eq:eq4} faisant référence respectivement au nombre de personnes sensisbles, exposées, infectées, immunisées. Le modèle de dynamique épidémiologique pour le moustique est celui-ci :
 
 $$ \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)$$ {#eq:eq5}
 $$ \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)$$ {#eq:eq6}
@@ -53,7 +53,7 @@ Ce premier modèle relativement simple a été ensuite largement modifié par le
 
 Seul les deux derniers stades de ce cycle de vie peuvent donner lieu à l'infection d'un être humain sensible. En effet, les femelles ayant atteint ces stades de vies doivent consommer du sang pour pouvoir assurer la survie de leurs oeufs. Ce second modèle a été évalué par les auteurs à une température constante de 25°C.
 
-Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour forcer certaines variables controllant le modèle 2. Les variables forcés par la température sont :
+Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour influencer certaines variables controllant le modèle 2. Les variables forcés par la température sont :
 
 - Le temps de développement des oeufs ;
 - Le temps de développement des larves ;
