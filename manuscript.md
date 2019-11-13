@@ -80,7 +80,7 @@ Ce premier modèle relativement simple a été ensuite largement modifié par le
 
 Seul les deux derniers stades de ce cycle de vie peuvent donner lieu à l'infection d'un être humain sensible. En effet, les femelles ayant atteint ces stades de vies doivent consommer du sang pour pouvoir assurer la survie de leurs oeufs. Ce second modèle a été évalué par les auteurs à une température constante de 25°C.
 
-Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour forcer certaines variables controllant le modèle 2. Les variables influencées par la température sont :
+Dans un troisième temps, les auteurs de cet article ont modifié ce troisième modèle pour influencer certaines variables controllant le modèle 2. Les variables influencées par la température sont :
 
 - Le temps de développement des oeufs ;
 - Le temps de développement des larves ;
@@ -102,11 +102,11 @@ Pour ce projet, nous avons essayé de reproduire les principaux résultats de ce
 
 C'est en essayant de coder par nous-même ce modèle que nous avons rencontrer les points négatifs de cet article : la reproductibilité. Bien que les équations soient relativement simple dans le premier modèle, il existe déjà des erreurs de mise en page concernant les équations. Ces erreurs ont été facilement contourné grâce aux autres modèles de l'article qui ne sont qu'une extension du premier. Néanmoins, corriger ces premières erreurs n'a pas été suffisant pour faire fonctionner ce premier modèle : il y avait d'autres erreurs plus incidieuses.
 
-Le tableau décrivant les valeurs des différents paramètres contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle {@fig:model1}.
+Le tableau décrivant les valeurs des différents paramètres contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle (Fig. {@fig:model1}).
 
 ![Reproduction de la figure 3c de l'article.](figures/Model1.png){#fig:model1}
 
-Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelés dans les équations pas moins de 6 fautes différentes. Nous avons essayer de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs {@fig:model2}.
+Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelés dans les équations pas moins de 6 fautes différentes. Nous avons essayer de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs (Fig. {@fig:model2}).
 
 ![Résultat du modèle 2](figures/Model2.png){#fig:model2}
 
