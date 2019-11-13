@@ -40,5 +40,31 @@
         "title": "A dengue model with a dynamic aedes albopictus vector population",
         "type": "article-journal",
         "volume": "221"
+    },
+    {
+        "DOI": "10.1038/533452a",
+        "URL": "https://doi.org/10.1038%2F533452a",
+        "author": [
+            {
+                "family": "Baker",
+                "given": "Monya"
+            }
+        ],
+        "container-title": "Nature",
+        "id": "Baker_2016",
+        "issue": "7604",
+        "issued": {
+            "date-parts": [
+                [
+                    2016,
+                    5
+                ]
+            ]
+        },
+        "page": "452-454",
+        "publisher": "Springer Science; Business Media LLC",
+        "title": "1,500 scientists lift the lid on reproducibility",
+        "type": "article-journal",
+        "volume": "533"
     }
 ]

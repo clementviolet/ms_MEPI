@@ -124,6 +124,8 @@ Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et ma
 
 # Synthèse
 
-Proin eleifend eros eget ante porta, at hendrerit urna pharetra. Duis a lacus condimentum, dignissim lacus et, tincidunt enim. Quisque ac efficitur velit. Sed semper ligula id lacus venenatis hendrerit. Phasellus a nisl id sapien porttitor cursus sed sit amet orci. Praesent blandit feugiat neque ac feugiat. Quisque dictum enim sed velit sodales pellentesque. In sapien ligula, bibendum ac purus vitae, luctus venenatis nisl. Nulla nec posuere velit. Suspendisse ex ex, laoreet ac ante eu, scelerisque tincidunt ipsum. Pellentesque hendrerit vestibulum mollis. Aliquam et neque hendrerit risus sagittis placerat.
+La tentative de reproduire les résultats de cet article scientifique nous a permi de nous confronter à un problème qui fait grand bruit dans la communauté scientifique : la crise de la reproductibilité [@Baker_2016]. Nous avons échouer à pouvoir reproduire l'ensemble des résulats de cet article.
+
+Ce travail nous a permi de nous rendre compte qu'écrire un article n'est pas seulement présenter les résultats de ses travaux. Cela va au-delas en permettant à tout chercheur de reproduire les résultats obtenu. Il faut donc prendre  le plus grand soins à vérifier que toutes les données nécessaire soit facilement disponible : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l'éditeur de la revue afin de s'assurer qu'aucune erreur de mise en page n'empêcherait de reproduire les résultats.
 
 # Bibliographie
