@@ -102,11 +102,13 @@ Pour ce projet, nous avons essayé de reproduire les principaux résultats de ce
 
 C'est en essayant de coder par nous-même ce modèle que nous avons rencontrer les points négatifs de cet article : la reproductibilité. Bien que les équations soient relativement simple dans le premier modèle, il existe déjà des erreurs de mise en page concernant les équations. Ces erreurs ont été facilement contourné grâce aux autres modèles de l'article qui ne sont qu'une extension du premier. Néanmoins, corriger ces premières erreurs n'a pas été suffisant pour faire fonctionner ce premier modèle : il y avait d'autres erreurs plus incidieuses.
 
-Le tableau décrivant les valeurs des différents paramètres contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle.
+Le tableau décrivant les valeurs des différents paramètres contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle {@fig:model1}.
 
-Ajouter figure du modèle
+![Reproduction de la figure 3c de l'article.](figures/Model1.png){#fig:model1}
 
-Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelés dans les équations pas moins de X fautes. Nous avons essayer de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs. Ajouter figure de ce qu'on trouve et devrait trouver.
+Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelés dans les équations pas moins de 6 fautes différentes. Nous avons essayer de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs {@fig:model2}.
+
+![Résultat du modèle 2](figures/Model2.png){#fig:model2}
 
 Il est possible que nos corrections soient également érronées, ou bien alors qu'il y ait d'autres erreurs dans les paramètres du modèles. Certains paramètres sont des fonctions dépendants de la température, or l'article ne contient pas ces fonctions mathématiques. L'article contient uniquement leurs images pour une température de 25°C. Nous supposons qu'il y a également des erreurs de typographie pour les images de ces fonctions. Pour les paramètres consernés, nous avons essayé de nombreuses autres valeurs, mais aucune ne convenait. Les auteurs indique seulement que nous pouvont trouver ces equations dans le mémoire de master de l'auteur principal. Cependant, aucune version de ce mémoire n'est disponible en ligne.
 

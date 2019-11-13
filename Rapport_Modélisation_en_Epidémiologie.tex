@@ -55,6 +55,19 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -254,15 +267,29 @@ aussi des erreurs de mise en page. Le premier modèle ne contenait qu'une
 seule erreur dans les paramètres, mais la trouver nous a pris plusieurs
 heures. La correction quant à elle était simple à mettre en place.
 Finalement, nous avons réussi à recréer les résultats pour ce premier
-modèle.
+modèle \ref{fig:model1}.
 
-Ajouter figure du modèle
+\begin{figure}
+\hypertarget{fig:model1}{%
+\centering
+\includegraphics{figures/Model1.png}
+\caption{Reproduction de la figure 3c de l'article.}\label{fig:model1}
+}
+\end{figure}
 
 Pour les modèles 2 nous n'avons pas réussi à reproduire les résultats
-des auteurs, car nous avons décelés dans les équations pas moins de X
-fautes. Nous avons essayer de les corriger au mieux, mais nos résultats
-ne convergent pas vers ceux trouver par les auteurs. Ajouter figure de
-ce qu'on trouve et devrait trouver.
+des auteurs, car nous avons décelés dans les équations pas moins de 6
+fautes différentes. Nous avons essayer de les corriger au mieux, mais
+nos résultats ne convergent pas vers ceux trouver par les auteurs
+\ref{fig:model2}.
+
+\begin{figure}
+\hypertarget{fig:model2}{%
+\centering
+\includegraphics{figures/Model2.png}
+\caption{Résultat du modèle 2}\label{fig:model2}
+}
+\end{figure}
 
 Il est possible que nos corrections soient également érronées, ou bien
 alors qu'il y ait d'autres erreurs dans les paramètres du modèles.
