@@ -1,11 +1,10 @@
 ---
-authors:
+author:
 - Kevyn Raynal
 - Clément Violet
 documentclass: article
 classoption: oneside
 dates: Semestre 9 --- Master MODE
-langue: true
 lang: fr-fr
 geometry:
   - left = 2cm
