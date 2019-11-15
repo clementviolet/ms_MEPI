@@ -38,7 +38,7 @@ $$ \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i $$ {#eq:eq7}
 
 Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elle référence respectivement aux moustiques sensibles, exposés et infectés.
 
-Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté de @Erickson_2010.
+Les paramètres de ce modèle sont présentés dans le tableau {@tbl:tab1} adapté de @Erickson_2010.
 
 |                             Nom de la variable                | Variable        | Valeur                 |
 | :------------------------------------------------------------ | :-------------: | :--------------------: |
@@ -67,7 +67,7 @@ Les paramètres de ce modèle sont présentés dans le tableau {@tbl:1} adapté 
 | Inverse du temps de reproduction                              |  $\tau_r$       |  $1$                   | 
 
 Table: Paramètres utilisés pour construire le modèle 1.
- {#tbl:1}
+ {#tbl:tab1}
 
 Ce premier modèle relativement simple a été ensuite largement modifié par les auteurs. Ces derniers ont créé un second modèle en divisant le cycle de vie du moustique *A. aegypti* en six stades de vie distincts : 
 
