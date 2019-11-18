@@ -19,7 +19,7 @@ linestretch: false
 
 # Objectif du modèle
 
-L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique *Aedes albopictus*. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 millions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dengue qui est *Aedes aegypti*. Si les auteurs préfères s’intéresser à *Aedes albopictus*, c’est parce que cette espèce a été la cause de plusieurs épidémies de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitive qu’*A. aegypti*.
+L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique *Aedes albopictus*. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 millions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dengue qui est *Aedes aegypti*. Si les auteurs préfèrent s’intéresser à *Aedes albopictus*, c’est parce que cette espèce a été la cause de plusieurs épidémies de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitive qu’*A. aegypti*.
 
 Les auteurs ont créé un premier modèle en couplant un modèle classique SEIR pour modéliser la dynamique de l'infection chez l'Homme avec un modèle SEI pour modéliser la dynamique de la maladie chez le vecteur.
 
@@ -36,7 +36,7 @@ $$ \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)$$ {#eq:
 $$ \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)$$ {#eq:eq6}
 $$ \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i $$ {#eq:eq7}
 
-Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elle référence respectivement aux moustiques sensibles, exposés et infectés.
+Les équations {@eq:eq5}, {@eq:eq6}, {@eq:eq7} font quant à elles référence respectivement aux moustiques sensibles, exposés et infectés.
 
 Les paramètres de ce modèle sont présentés dans le tableau {@tbl:tab1} adapté de @Erickson_2010.
 
@@ -59,8 +59,7 @@ Les paramètres de ce modèle sont présentés dans le tableau {@tbl:tab1} adapt
 | Taux de mortalité des larves                                  |  $\mu_l$        |  $0.025$               |
 | Inverse du temps de développement des nymphes                 |  $\tau_p$       |  $0,342$               |
 | Taux de mortalité des nymphes                                 |  $\mu_p$        |  $0,0025$              |
-| Inverse du temps de développement des adultes immaturees      |  $\tau_i$       |  $1$                   |
-| Inverse du temps de développement des adultes immaturees      |  $\tau_i$       |  $1$                   |
+| Inverse du temps de développement des adultes immatures      |  $\tau_i$       |  $1$                   |
 | Taux de mortalité des adultes                                 |  $\mu_a$        |  $0,0501$              |
 | Inverse du temps d'exposition du vecteur                      |  $\tau_{ex\nu}$ |  $1/9$ jours           |
 | Temps de nourissage ou de gestation                           |  $\tau_g$       |  $0.401$               |
@@ -89,12 +88,12 @@ Dans un troisième temps, les auteurs de cet article ont modifié ce troisième 
 
 Pour réaliser ces trois modèles, auteurs de cet article se basent sur quatre hypothèses :
 
-- La population à une exposition homogène aux moustiques ;
+- La population a une exposition homogène aux moustiques ;
 - Il n'y a pas de migration humaine ;
 - Il n'y a pas de migration de vecteur ;
-- Il existe qu'un seul sérotype de la dengue.
+- Il n'existe qu'un seul sérotype de la dengue.
 
-L'hypothèse la plus contraignante pour le modèle est la dernière. Il existe en réalité plusieurs sérotypes pour ce virus. Or, si une personne a déjà été infectée par le passé elle devrait se trouver dans le compartiment immunisé et non pas susceptible. De plus, une personne déjà infectée par un serotype peut être infectée par un autre serotype. Si cette hypothèse était relaxée, elle complexifierait grandement les équations concernant les compartiments susceptibles et  immunisés.
+L'hypothèse la plus contraignante pour le modèle est la dernière. Il existe en réalité plusieurs sérotypes pour ce virus. Or, si une personne a déjà été infectée par le passé elle devrait se trouver dans le compartiment immunisé et non pas susceptible. De plus, une personne déjà infectée par un sérotype peut être infecté par un autre sérotype. Si cette hypothèse était relaxée, elle complexifierait grandement les équations concernant les compartiments susceptibles et  immunisés.
 
 # Reproductibilité de l'article
 
@@ -102,11 +101,11 @@ Pour ce projet, nous avons essayé de reproduire les principaux résultats de ce
 
 C'est en essayant de coder par nous-mêmes ce modèle que nous avons rencontré les points négatifs de cet article : la reproductibilité. Bien que les équations soient relativement simples dans le premier modèle, il existe déjà des erreurs de mise en page concernant les équations. Ces erreurs ont été facilement contournées grâce aux autres modèles de l'article qui ne sont qu'une extension du premier. Néanmoins, corriger ces premières erreurs n'a pas été suffisant pour faire fonctionner ce premier modèle : il y avait d'autres erreurs plus insidieuses.
 
-Le tableau décrivant les valeurs des différents paramètres (Tab. {@tbl:tab1}) contient lui aussi des erreurs de mise en page. Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle (Fig. {@fig:model1}).
+Le tableau décrivant les valeurs des différents paramètres présenté dans l'article contient lui aussi des erreurs de mise en page, nous avons fait le choix de présenter un tableau corrigé (Tab. 1 {@tbl:tab1}). Le premier modèle ne  contenait qu'une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était  simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle (Fig. {@fig:model1}).
 
 ![Reproduction de la figure 3c de l'article.](figures/Model1.png){#fig:model1}
 
-Pour le modèle 2, nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelé dans les équations pas moins de 6 fautes différentes. Nous avons essayé de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs (Fig. {@fig:model2}).
+Pour le modèle 2, nous n'avons pas réussi à reproduire les résultats des auteurs, car nous avons décelé dans les équations pas moins de 6 fautes différentes. Nous avons essayé de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouvés par les auteurs (Fig. {@fig:model2}).
 
 
 ![Résultats du modèle 2](figures/Model2.png){#fig:model2}
@@ -128,6 +127,6 @@ Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et ma
 
 La tentative de reproduire les résultats de cet article scientifique nous a permis de nous confronter à un problème qui fait grand bruit dans la communauté scientifique : la crise de la reproductibilité [@Baker_2016]. Nous avons échoué à pouvoir reproduire l'ensemble des résultats de cet article.
 
-Ce travail nous a permis de nous rendre compte qu'écrire un article n'est pas seulement présenter les résultats de ses travaux. Cela va au delta en permettant à tout chercheur de reproduire les résultats obtenus. Il faut donc prendre  le plus grand soin à vérifier que toutes les données nécessaires sont facilement disponibles : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l'éditeur de la revue afin de s'assurer qu'aucune erreur de mise en page n'empêcherait de reproduire les résultats.
+Ce travail nous a permis de nous rendre compte qu'écrire un article n'est pas seulement présenter les résultats de ses travaux. Cela va au-delà en permettant à tout chercheur de reproduire les résultats obtenus. Il faut donc prendre  le plus grand soin à vérifier que toutes les données nécessaires sont facilement disponibles : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l'éditeur de la revue afin de s'assurer qu'aucune erreur de mise en page n'empêcherait de reproduire les résultats.
 
 # Bibliographie

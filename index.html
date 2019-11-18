@@ -16,7 +16,7 @@
             <h1>Rapport Modélisation en Epidémiologie</h1>
             <section class="creators">
                               <div class="creator">
-                  <div class="author">Kevyn Reynald</div>
+                  <div class="author">Kevyn Raynald</div>
                   <div class="affiliation">Université de Rennes 1</div>
                   <div class="orcid">0000-0000-0000-0000</div>
                </div>
@@ -50,13 +50,13 @@
 
       <article class="container">
          <h1 id="objectif-du-modèle">Objectif du modèle</h1>
-         <p>L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique <em>Aedes albopictus</em>. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 millions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dengue qui est <em>Aedes aegypti</em>. Si les auteurs préfères s’intéresser à <em>Aedes albopictus</em>, c’est parce que cette espèce a été la cause de plusieurs épidémies de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitive qu’<em>A. aegypti</em>.</p>
+         <p>L’objectif de ce modèle est d’observer la dynamique de la transmission de la dengue par le moustique <em>Aedes albopictus</em>. Cette maladie infectieuse menace chaque année près de 40% de la population mondiale et infecte chaque année entre 50 et 100 millions de personnes selon l’OMS. L’originalité de ce modèle est qu’il ne s’intéresse pas à la principale espèce de moustique vecteur de la dengue qui est <em>Aedes aegypti</em>. Si les auteurs préfèrent s’intéresser à <em>Aedes albopictus</em>, c’est parce que cette espèce a été la cause de plusieurs épidémies de dengue, cette espèce est plus difficile à contrôler, elle a un taux de morsure supérieur et est plus compétitive qu’<em>A. aegypti</em>.</p>
          <p>Les auteurs ont créé un premier modèle en couplant un modèle classique SEIR pour modéliser la dynamique de l’infection chez l’Homme avec un modèle SEI pour modéliser la dynamique de la maladie chez le vecteur.</p>
          <p>Le modèle de dynamique chez l’Homme est le suivant :</p>
          <p><span id="eq:eq1" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdH_s%7D%7Bdt%7D%20%3D%20%5Clambda%20H_t%20-%20H_s%20%5Cleft%28%5Cfrac%7BcV_i%7D%7BH_t%7D%20%2B%20%5Cmu_h%5Cright%29" alt=" \frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{cV_i}{H_t} + \mu_h\right)" title=" \frac{dH_s}{dt} = \lambda H_t - H_s \left(\frac{cV_i}{H_t} + \mu_h\right)" /><br /><span class="eqnos-number">(1)</span></span>  <span id="eq:eq2" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdH_e%7D%7Bdt%7D%20%3D%20H_s%20%5Cfrac%7BcV_i%7D%7BH_t%7D%20-%20H_e%20%28%5Ctau_%7Bexh%7D%20%2B%20%5Cmu_h%29" alt=" \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)" title=" \frac{dH_e}{dt} = H_s \frac{cV_i}{H_t} - H_e (\tau_{exh} + \mu_h)" /><br /><span class="eqnos-number">(2)</span></span>  <span id="eq:eq3" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdH_i%7D%7Bdt%7D%20%3D%20H_e%5Ctau_%7Bexh%7D%20-%20H_i%5Cleft%28%5Ctau_%7Bih%7D%20%2B%20%5Calpha%20%2B%20%5Cmu_h%5Cright%29" alt=" \frac{dH_i}{dt} = H_e\tau_{exh} - H_i\left(\tau_{ih} + \alpha + \mu_h\right)" title=" \frac{dH_i}{dt} = H_e\tau_{exh} - H_i\left(\tau_{ih} + \alpha + \mu_h\right)" /><br /><span class="eqnos-number">(3)</span></span>  <span id="eq:eq4" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdH_r%7D%7Bdt%7D%20%3D%20H_i%5Cleft%28%5Ctau_%7Bih%7D%5Cright%29%20-%20%5Cmu_h%20H_r" alt=" \frac{dH_r}{dt} = H_i\left(\tau_{ih}\right) - \mu_h H_r" title=" \frac{dH_r}{dt} = H_i\left(\tau_{ih}\right) - \mu_h H_r" /><br /><span class="eqnos-number">(4)</span></span> </p>
          <p>Avec les équations <a href="#eq:eq1">1</a>, <a href="#eq:eq2">2</a>, <a href="#eq:eq3">3</a>, <a href="#eq:eq4">4</a> faisant référence respectivement au nombre de personnes sensibles, exposées, infectées, immunisées. Le modèle de dynamique épidémiologique pour le moustique est celui-ci :</p>
          <p><span id="eq:eq5" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_s%7D%7Bdt%7D%20%3D%20%5Cmu_aV_t%20-%20V_s%20%5Cleft%28%5Cfrac%7BcH_i%7D%7BH_t%7D%20%2B%20mu_a%5Cright%29" alt=" \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)" title=" \frac{dV_s}{dt} = \mu_aV_t - V_s \left(\frac{cH_i}{H_t} + mu_a\right)" /><br /><span class="eqnos-number">(5)</span></span>  <span id="eq:eq6" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_e%7D%7Bdt%7D%20%3D%20V_s%20%5Cfrac%7BcH_i%7D%7BH_t%7D%20-%20V_e%20%5Cleft%28%5Ctau_%7Bex%5Cnu%7D%20%2B%20%5Cmu_a%5Cright%29" alt=" \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)" title=" \frac{dV_e}{dt} = V_s \frac{cH_i}{H_t} - V_e \left(\tau_{ex\nu} + \mu_a\right)" /><br /><span class="eqnos-number">(6)</span></span>  <span id="eq:eq7" class="eqnos"><br /><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%20%5Cfrac%7BdV_i%7D%7Bdt%7D%20%3D%20V_e%5Ctau_%7Bex%5Cnu%7D%20-%20%5Cmu_aV_i%20" alt=" \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i " title=" \frac{dV_i}{dt} = V_e\tau_{ex\nu} - \mu_aV_i " /><br /><span class="eqnos-number">(7)</span></span> </p>
-         <p>Les équations <a href="#eq:eq5">5</a>, <a href="#eq:eq6">6</a>, <a href="#eq:eq7">7</a> font quant à elle référence respectivement aux moustiques sensibles, exposés et infectés.</p>
+         <p>Les équations <a href="#eq:eq5">5</a>, <a href="#eq:eq6">6</a>, <a href="#eq:eq7">7</a> font quant à elles référence respectivement aux moustiques sensibles, exposés et infectés.</p>
          <p>Les paramètres de ce modèle sont présentés dans le tableau <a href="#tbl:tab1">1</a> adapté de <span class="citation" data-cites="Erickson_2010">Erickson et al. (2010)</span>.</p>
          <div id="tbl:tab1" class="tablenos">
          <table>
@@ -155,31 +155,26 @@
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C0025" alt="0,0025" title="0,0025" /></td>
          </tr>
          <tr class="even">
-         <td style="text-align: left;">Inverse du temps de développement des adultes immaturees</td>
+         <td style="text-align: left;">Inverse du temps de développement des adultes immatures</td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_i" alt="\tau_i" title="\tau_i" /></td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1" alt="1" title="1" /></td>
          </tr>
          <tr class="odd">
-         <td style="text-align: left;">Inverse du temps de développement des adultes immaturees</td>
-         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_i" alt="\tau_i" title="\tau_i" /></td>
-         <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1" alt="1" title="1" /></td>
-         </tr>
-         <tr class="even">
          <td style="text-align: left;">Taux de mortalité des adultes</td>
          <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Cmu_a" alt="\mu_a" title="\mu_a" /></td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0%2C0501" alt="0,0501" title="0,0501" /></td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
          <td style="text-align: left;">Inverse du temps d’exposition du vecteur</td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_%7Bex%5Cnu%7D" alt="\tau_{ex\nu}" title="\tau_{ex\nu}" /></td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1%2F9" alt="1/9" title="1/9" /> jours</td>
          </tr>
-         <tr class="even">
+         <tr class="odd">
          <td style="text-align: left;">Temps de nourissage ou de gestation</td>
          <td style="text-align: center;">  <img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_g" alt="\tau_g" title="\tau_g" /></td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?0.401" alt="0.401" title="0.401" /></td>
          </tr>
-         <tr class="odd">
+         <tr class="even">
          <td style="text-align: left;">Inverse du temps de reproduction</td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?%5Ctau_r" alt="\tau_r" title="\tau_r" /></td>
          <td style="text-align: center;"><img style="vertical-align:middle" src="https://latex.codecogs.com/png.latex?1" alt="1" title="1" /></td>
@@ -206,22 +201,22 @@
          </ul>
          <p>Pour réaliser ces trois modèles, auteurs de cet article se basent sur quatre hypothèses :</p>
          <ul>
-         <li>La population à une exposition homogène aux moustiques ;</li>
+         <li>La population a une exposition homogène aux moustiques ;</li>
          <li>Il n’y a pas de migration humaine ;</li>
          <li>Il n’y a pas de migration de vecteur ;</li>
-         <li>Il existe qu’un seul sérotype de la dengue.</li>
+         <li>Il n’existe qu’un seul sérotype de la dengue.</li>
          </ul>
-         <p>L’hypothèse la plus contraignante pour le modèle est la dernière. Il existe en réalité plusieurs sérotypes pour ce virus. Or, si une personne a déjà été infectée par le passé elle devrait se trouver dans le compartiment immunisé et non pas susceptible. De plus, une personne déjà infectée par un serotype peut être infectée par un autre serotype. Si cette hypothèse était relaxée, elle complexifierait grandement les équations concernant les compartiments susceptibles et immunisés.</p>
+         <p>L’hypothèse la plus contraignante pour le modèle est la dernière. Il existe en réalité plusieurs sérotypes pour ce virus. Or, si une personne a déjà été infectée par le passé elle devrait se trouver dans le compartiment immunisé et non pas susceptible. De plus, une personne déjà infectée par un sérotype peut être infecté par un autre sérotype. Si cette hypothèse était relaxée, elle complexifierait grandement les équations concernant les compartiments susceptibles et immunisés.</p>
          <h1 id="reproductibilité-de-larticle">Reproductibilité de l’article</h1>
          <p>Pour ce projet, nous avons essayé de reproduire les principaux résultats de cet article à savoir les principaux graphiques de ce modèle. Le premier modèle a été codé en R, puisque le nombre d’équations est relativement restreint.</p>
          <p>C’est en essayant de coder par nous-mêmes ce modèle que nous avons rencontré les points négatifs de cet article : la reproductibilité. Bien que les équations soient relativement simples dans le premier modèle, il existe déjà des erreurs de mise en page concernant les équations. Ces erreurs ont été facilement contournées grâce aux autres modèles de l’article qui ne sont qu’une extension du premier. Néanmoins, corriger ces premières erreurs n’a pas été suffisant pour faire fonctionner ce premier modèle : il y avait d’autres erreurs plus insidieuses.</p>
-         <p>Le tableau décrivant les valeurs des différents paramètres (Tab. <a href="#tbl:tab1">1</a>) contient lui aussi des erreurs de mise en page. Le premier modèle ne contenait qu’une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle (Fig. <a href="#fig:model1">1</a>).</p>
+         <p>Le tableau décrivant les valeurs des différents paramètres présenté dans l’article contient lui aussi des erreurs de mise en page, nous avons fait le choix de présenter un tableau corrigé (Tab. 1 <a href="#tbl:tab1">1</a>). Le premier modèle ne contenait qu’une seule erreur dans les paramètres, mais la trouver nous a pris plusieurs heures. La correction quant à elle était simple à mettre en place. Finalement, nous avons réussi à recréer les résultats pour ce premier modèle (Fig. <a href="#fig:model1">1</a>).</p>
          <div id="fig:model1" class="fignos">
          <figure>
          <img src="figures/Model1.png" alt="" /><figcaption><span>Figure 1:</span> Reproduction de la figure 3c de l’article.</figcaption>
          </figure>
          </div>
-         <p>Pour le modèle 2, nous n’avons pas réussi à reproduire les résultats des auteurs, car nous avons décelé dans les équations pas moins de 6 fautes différentes. Nous avons essayé de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouver par les auteurs (Fig. <a href="#fig:model2">2</a>).</p>
+         <p>Pour le modèle 2, nous n’avons pas réussi à reproduire les résultats des auteurs, car nous avons décelé dans les équations pas moins de 6 fautes différentes. Nous avons essayé de les corriger au mieux, mais nos résultats ne convergent pas vers ceux trouvés par les auteurs (Fig. <a href="#fig:model2">2</a>).</p>
          <div id="fig:model2" class="fignos">
          <figure>
          <img src="figures/Model2.png" alt="" /><figcaption><span>Figure 2:</span> Résultats du modèle 2</figcaption>
@@ -235,7 +230,7 @@
          <p>Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi varius mauris eu ipsum pellentesque accumsan a vitae turpis. Sed laoreet finibus purus, venenatis facilisis mi. Curabitur molestie dui nibh, non condimentum metus efficitur nec. Fusce nisl eros, bibendum et fermentum vel, commodo eu est. Sed tristique eleifend felis, sed porttitor tellus luctus non. Mauris eros metus, rhoncus viverra imperdiet eget, tempor in odio. Aliquam dapibus pharetra tortor sit amet fermentum.</p>
          <h1 id="synthèse">Synthèse</h1>
          <p>La tentative de reproduire les résultats de cet article scientifique nous a permis de nous confronter à un problème qui fait grand bruit dans la communauté scientifique : la crise de la reproductibilité <span class="citation" data-cites="Baker_2016">(Baker 2016)</span>. Nous avons échoué à pouvoir reproduire l’ensemble des résultats de cet article.</p>
-         <p>Ce travail nous a permis de nous rendre compte qu’écrire un article n’est pas seulement présenter les résultats de ses travaux. Cela va au delta en permettant à tout chercheur de reproduire les résultats obtenus. Il faut donc prendre le plus grand soin à vérifier que toutes les données nécessaires sont facilement disponibles : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l’éditeur de la revue afin de s’assurer qu’aucune erreur de mise en page n’empêcherait de reproduire les résultats.</p>
+         <p>Ce travail nous a permis de nous rendre compte qu’écrire un article n’est pas seulement présenter les résultats de ses travaux. Cela va au-delà en permettant à tout chercheur de reproduire les résultats obtenus. Il faut donc prendre le plus grand soin à vérifier que toutes les données nécessaires sont facilement disponibles : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l’éditeur de la revue afin de s’assurer qu’aucune erreur de mise en page n’empêcherait de reproduire les résultats.</p>
          <h1 id="bibliographie" class="unnumbered">Bibliographie</h1>
          <div id="refs" class="references" role="doc-bibliography">
          <div id="ref-Baker_2016">
