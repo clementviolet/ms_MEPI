@@ -27,7 +27,7 @@
                </div>
                            </section>
             <summary>
-               Rapport de l’UE MEPI, d’apèrs l’article intitulé“A dengue model with a dynamic Aedes albopictus vector population” d’après Erickson et al. 2010
+               Rapport de l’UE MEPI, d’apèrs l’article intitulé “A dengue model with a dynamic Aedes albopictus vector population” d’après Erickson et al. 2010
                <!--<div class="keywords">-->
                <!---->
                <!--<span class="keyword">MEPI</span>-->
@@ -225,9 +225,7 @@
          <p>Il est possible que nos corrections soient également erronées, ou bien alors qu’il y ait d’autres erreurs dans les paramètres du modèle. Certains paramètres sont des fonctions dépendantes de la température. Or l’article ne contient pas ces fonctions mathématiques. L’article contient uniquement leurs images pour une température de 25°C. Nous supposons qu’il y a également des erreurs de typographie pour les images de ces fonctions. Pour les paramètres concernés, nous avons essayé de nombreuses autres valeurs, mais aucune ne convenait. Les auteurs indiquent seulement que nous pouvons trouver ces équations dans le mémoire de master de l’auteur principal. Cependant, aucune version de ce mémoire n’est disponible en ligne.</p>
          <p>Pour le dernier modèle, même s’il nous avait été possible de faire fonctionner le deuxième modèle, nous n’aurions pas pu le reproduire. En effet, les auteurs de cet article expliquent avoir fait varier la température grâce à la température de l’air moyenne de la ville de Lubbock au Texas. Bien que ces données soient disponibles sur internet, le fait de ne pas avoir accès aux fonctions mathématiques dont les images servent de paramètres aux modèles 2 et 3 nous empêche de les reproduire.</p>
          <h1 id="modélisation-complémentaire">Modélisation complémentaire</h1>
-         <p>Pellentesque ac porta purus. Phasellus et pellentesque lacus, pulvinar vulputate dui. Pellentesque posuere pellentesque nisi vel ultricies. Vivamus at neque convallis, dignissim magna eget, aliquet ante. Maecenas venenatis, diam in maximus varius, felis ligula faucibus tellus, at tincidunt ligula ex eu mi. Nunc volutpat leo a nunc laoreet commodo. In hac habitasse platea dictumst. Aenean pellentesque arcu ut lacus pulvinar semper. Etiam convallis, magna maximus congue gravida, urna leo porttitor felis, ut luctus turpis lacus in enim. Vestibulum volutpat nulla libero, id cursus lacus faucibus sed. Quisque finibus metus quis lorem iaculis, a scelerisque diam tincidunt. Nulla placerat blandit quam, eu posuere augue. Cras sem ligula, sodales non sem at, interdum pretium quam. Cras eget justo blandit, lobortis diam sit amet, eleifend lorem.</p>
-         <h1 id="interprétations">Interprétations</h1>
-         <p>Pellentesque bibendum libero metus, sed laoreet nisl ornare eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi varius mauris eu ipsum pellentesque accumsan a vitae turpis. Sed laoreet finibus purus, venenatis facilisis mi. Curabitur molestie dui nibh, non condimentum metus efficitur nec. Fusce nisl eros, bibendum et fermentum vel, commodo eu est. Sed tristique eleifend felis, sed porttitor tellus luctus non. Mauris eros metus, rhoncus viverra imperdiet eget, tempor in odio. Aliquam dapibus pharetra tortor sit amet fermentum.</p>
+         <p>Nous avons choisi d’effectuer une analyse de sensibilité car celle-ci permet de valider le modèle utilisé, d’identifier les paramètres les plus influents et éventuellement de simplifier le modèle par exemple. La méthode de Morris <span class="citation" data-cites="Morris_1991">(Morris 1991)</span> a été choisie car c’est une méthode qui ne requiert pas d’hypothèse concernant le modèle et qui est peu coûteuse en simulations et est une méthode de screening plus représentative que l’OAT par exemple. En effet, les trajectoires sont choisies aléatoirement et l’exploration de l’espace est différente et plus satisfaisante que l’OAT. Nous avons librement adapté le script du site nanhung.rbind.io <span class="citation" data-cites="nanhung_2018">(2018)</span> à notre modèle. En effet, après avoir essayé de développer nous-même l’analyse de sensibilité, celle-ci s’est révélée infructueuse. Nous avons donc choisi d’opter cette approche qui ne s’est cependant pas finalisé sur des résultats concluants non plus. Effectivement, nous n’avons pas réussi à régler les erreurs sorties lors de l’exécution du script.</p>
          <h1 id="synthèse">Synthèse</h1>
          <p>La tentative de reproduire les résultats de cet article scientifique nous a permis de nous confronter à un problème qui fait grand bruit dans la communauté scientifique : la crise de la reproductibilité <span class="citation" data-cites="Baker_2016">(Baker 2016)</span>. Nous avons échoué à pouvoir reproduire l’ensemble des résultats de cet article.</p>
          <p>Ce travail nous a permis de nous rendre compte qu’écrire un article n’est pas seulement présenter les résultats de ses travaux. Cela va au-delà en permettant à tout chercheur de reproduire les résultats obtenus. Il faut donc prendre le plus grand soin à vérifier que toutes les données nécessaires sont facilement disponibles : équations, code source, tout devrait être en libre accès. De plus, lors du processus de publication, chaque chercheur devrait relire avec attention les épreuves envoyées par l’éditeur de la revue afin de s’assurer qu’aucune erreur de mise en page n’empêcherait de reproduire les résultats.</p>
@@ -238,6 +236,12 @@
          </div>
          <div id="ref-Erickson_2010">
          <p><strong>Erickson et al.</strong> A dengue model with a dynamic aedes albopictus vector population. <em>Ecological Modelling.</em> Elsevier BV; 221:2899‑908. </p>
+         </div>
+         <div id="ref-Morris_1991">
+         <p><strong>Morris</strong>. Factorial sampling plans for preliminary computational experiments. <em>Technometrics.</em> JSTOR; 33:161. </p>
+         </div>
+         <div id="ref-nanhung_2018">
+         <p>(2018). Sensitivity analysis for pbpk model [Internet]. <em>Nan Hung.</em> </p>
          </div>
          </div>
       </article>

@@ -317,31 +317,21 @@ reproduire.
 \section{Modélisation
 complémentaire}\label{moduxe9lisation-compluxe9mentaire}}
 
-Pellentesque ac porta purus. Phasellus et pellentesque lacus, pulvinar
-vulputate dui. Pellentesque posuere pellentesque nisi vel ultricies.
-Vivamus at neque convallis, dignissim magna eget, aliquet ante. Maecenas
-venenatis, diam in maximus varius, felis ligula faucibus tellus, at
-tincidunt ligula ex eu mi. Nunc volutpat leo a nunc laoreet commodo. In
-hac habitasse platea dictumst. Aenean pellentesque arcu ut lacus
-pulvinar semper. Etiam convallis, magna maximus congue gravida, urna leo
-porttitor felis, ut luctus turpis lacus in enim. Vestibulum volutpat
-nulla libero, id cursus lacus faucibus sed. Quisque finibus metus quis
-lorem iaculis, a scelerisque diam tincidunt. Nulla placerat blandit
-quam, eu posuere augue. Cras sem ligula, sodales non sem at, interdum
-pretium quam. Cras eget justo blandit, lobortis diam sit amet, eleifend
-lorem.
-
-\hypertarget{interpruxe9tations}{%
-\section{Interprétations}\label{interpruxe9tations}}
-
-Pellentesque bibendum libero metus, sed laoreet nisl ornare eget.
-Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi
-varius mauris eu ipsum pellentesque accumsan a vitae turpis. Sed laoreet
-finibus purus, venenatis facilisis mi. Curabitur molestie dui nibh, non
-condimentum metus efficitur nec. Fusce nisl eros, bibendum et fermentum
-vel, commodo eu est. Sed tristique eleifend felis, sed porttitor tellus
-luctus non. Mauris eros metus, rhoncus viverra imperdiet eget, tempor in
-odio. Aliquam dapibus pharetra tortor sit amet fermentum.
+Nous avons choisi d'effectuer une analyse de sensibilité car celle-ci
+permet de valider le modèle utilisé, d'identifier les paramètres les
+plus influents et éventuellement de simplifier le modèle par exemple. La
+méthode de Morris (Morris 1991) a été choisie car c'est une méthode qui
+ne requiert pas d'hypothèse concernant le modèle et qui est peu coûteuse
+en simulations et est une méthode de screening plus représentative que
+l'OAT par exemple. En effet, les trajectoires sont choisies
+aléatoirement et l'exploration de l'espace est différente et plus
+satisfaisante que l'OAT. Nous avons librement adapté le script du site
+nanhung.rbind.io (2018) à notre modèle. En effet, après avoir essayé de
+développer nous-même l'analyse de sensibilité, celle-ci s'est révélée
+infructueuse. Nous avons donc choisi d'opter cette approche qui ne s'est
+cependant pas finalisé sur des résultats concluants non plus.
+Effectivement, nous n'avons pas réussi à régler les erreurs sorties lors
+de l'exécution du script.
 
 \hypertarget{synthuxe8se}{%
 \section{Synthèse}\label{synthuxe8se}}
@@ -375,5 +365,13 @@ mise en page n'empêcherait de reproduire les résultats.
 \textbf{Erickson et al.} A dengue model with a dynamic aedes albopictus
 vector population. \emph{Ecological Modelling.} Elsevier BV;
 221:2899‑908.
+
+\leavevmode\hypertarget{ref-Morris_1991}{}%
+\textbf{Morris}. Factorial sampling plans for preliminary computational
+experiments. \emph{Technometrics.} JSTOR; 33:161.
+
+\leavevmode\hypertarget{ref-nanhung_2018}{}%
+(2018). Sensitivity analysis for pbpk model {[}Internet{]}. \emph{Nan
+Hung.}
 
 \end{document}

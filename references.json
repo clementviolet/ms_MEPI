@@ -66,5 +66,46 @@
         "title": "1,500 scientists lift the lid on reproducibility",
         "type": "article-journal",
         "volume": "533"
+    },
+    {
+        "URL": "https://nanhung.rbind.io/post/sensitivity-analysis-for-pbpk-model/",
+        "container-title": "Nan Hung",
+        "id": "nanhung_2018",
+        "issued": {
+            "date-parts": [
+                [
+                    2018,
+                    5
+                ]
+            ]
+        },
+        "title": "Sensitivity analysis for pbpk model",
+        "type": "no-type"
+    },
+    {
+        "DOI": "10.2307/1269043",
+        "URL": "https://doi.org/10.2307%2F1269043",
+        "author": [
+            {
+                "family": "Morris",
+                "given": "Max D."
+            }
+        ],
+        "container-title": "Technometrics",
+        "id": "Morris_1991",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    1991,
+                    5
+                ]
+            ]
+        },
+        "page": "161",
+        "publisher": "JSTOR",
+        "title": "Factorial sampling plans for preliminary computational experiments",
+        "type": "article-journal",
+        "volume": "33"
     }
 ]
